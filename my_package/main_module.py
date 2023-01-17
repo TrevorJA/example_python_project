@@ -4,14 +4,34 @@ Cornell University
 January, 2023
 """
 
+# Import the helpers from the current folder "."
 from . import main_helpers
+
+# Import the subpackage_module
 from .my_subpackage import subpackage_module
 
 def main_module_function():
-    print('The main function, module_function is being used.')
-    print('The main function is not enough, lets us the helper!')
-    status = main_helpers.helper_function()
-    if not status:
-        print('The helper could not solve it, lets try the subpackage.')
-        status = subpackage_module.subpackage_function()
-    return status
+
+    print('Here is a riddle, maybe my_package can help solve it:')
+    print('\n   What runs but has no feet, roars but has no mouth? \n')
+
+    solved = False
+    while not solved:
+        print('Lets see if the helper can solve the riddle.')
+
+        # Run the helper function
+        status = main_helpers.helper_function()
+
+        if status:
+            print('The helper solved it, the answer is "A River"!')
+            solved = True
+        else:
+            print('The helper could not solve it.')
+            print('Maybe the subpackage_module can help.')
+            status = subpackage_module.subpackage_function()
+            if status:
+                print('The subpackage solved it, the answer is "A River"!')
+                solved = True
+            else:
+                print('The subpackage could not solve it...')
+    return solved
