@@ -12,7 +12,7 @@ from .subpackage import subpackage_module
 
 def main_module_function():
 
-    print('Here is a riddle, maybe my_package can help solve it:')
+    print('Here is a riddle, maybe "sample_package" can help solve it:')
     print('\n   What runs but has no feet, roars but has no mouth? \n')
 
     solved = False
