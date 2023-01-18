@@ -8,10 +8,10 @@ the rest of the work.
 """
 
 # Import the main package
-import package
+import sample_package
 
 def run():
-    solved = package.main_module_function()
+    solved = sample_package.main_module_function()
     return solved
 
 # Run the function if this is the main file executed

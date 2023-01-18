@@ -5,7 +5,7 @@ January, 2023
 """
 
 # Import the helpers from the current folder "."
-from . import main_helpers
+from . import helpers
 
 # Import the subpackage_module
 from .subpackage import subpackage_module
@@ -20,7 +20,7 @@ def main_module_function():
         print('Lets see if the helper can solve the riddle.')
 
         # Run the helper function
-        status = main_helpers.helper_function()
+        status = helpers.helper_function()
 
         if status:
             print('The helper solved it, the answer is "A River"!')
