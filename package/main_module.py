@@ -8,7 +8,7 @@ January, 2023
 from . import main_helpers
 
 # Import the subpackage_module
-from .my_subpackage import subpackage_module
+from .subpackage import subpackage_module
 
 def main_module_function():
 
