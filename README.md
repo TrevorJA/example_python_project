@@ -4,6 +4,7 @@
 
 This repository is designed as a Python project template, with a focus on project structure. The full blog post written to accompany this repository is available here:
 
+[Waterprogramming: Structuring a Python Project: Recommendations and a Template Example](https://waterprogramming.wordpress.com/2023/01/18/structuring-a-python-project-recommendations-and-a-template-example/)
 
 Please feel free to Fork or Download this repository for your own usage.
 
